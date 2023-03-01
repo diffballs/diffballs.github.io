@@ -1,0 +1,76 @@
+/* */
+/* font */
+/* */
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+    font-family: 'Share Tech Mono', monospace;
+    /* unscrollable */
+    overflow: hidden;
+}
+
+/* */
+/* everything else */
+/* */
+
+body {
+    margin: 0;
+    background: rgb(255, 100, 168);
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+    user-select: none;
+}
+
+#header {
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 8px;
+}
+
+/* title */
+#title {
+    padding: 1px;
+    background: #000;
+    border-radius: 10px;
+    color: #8AB4F8;
+    text-decoration: none;
+}
+
+#title:hover {
+    text-decoration: underline;
+}
+
+/* counters */
+.counter {
+    padding: 1.5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background: #000;
+    border-radius: 10px;
+    color: gainsboro;
+}
+
+.counter span {
+    font-weight: bold;
+}
+
+/* ballon */
+.ballon {
+    display: none;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+}
+
+/* */
+/* timer */
+/* */
+
+#timer {
+    font-size: 30px;
+    font-weight: bold;
+}

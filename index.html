@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="wert1x arschedev MaksymMNM">
+  <meta name="description" content="A javascript game">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script defer type="text/javascript" src="main.js"></script>
+  <script defer type="text/javascript" src="container.js"></script>
+  <title>Diffballs</title>
+</head>
+
+<body onload="timer_init()">
+  <!--Header-->
+  <div id="header">
+    <!--Parameters-->
+    <div>
+      <label>
+        <select id="fps" onchange="on_fps_select(this)">
+          <option value="fps" disabled>frames/s</option>
+          <option value="1">1 fps</option>
+          <option value="24">24 fps</option>
+          <option value="36" selected>36 fps</option>
+          <option value="48">48 fps</option>
+          <option value="60">60 fps</option>
+        </select>
+      </label>
+      <label>
+        <select id="size" onchange="on_size_select(this)">
+          <option value="size" disabled>size</option>
+          <option value="10">tiny</option>
+          <option value="20">small</option>
+          <option value="40" selected>medium</option>
+          <option value="random">random</option>
+        </select>
+      </label>
+      <label>
+        <select id="form" onchange="on_form_select(this)">
+          <option value="form" disabled>form</option>
+          <option value="loose">loose</option>
+          <option value="smooth" selected>smooth</option>
+        </select>
+      </label>
+      <label>
+        <input id="border" type="checkbox" onchange="on_border_check(this)">
+        &nbsp;
+      </label>
+    </div>
+    <!--Title-->
+    <div>
+      <a id="title" href="https://github.com/diffballs/diffballs.github.io/"
+        target="_blank"><b>&nbsp;Diffballs&nbsp;</b></a>
+    </div>
+    <!--Counters-->
+    <div>
+      <div id="counters">
+        <a class="counter">Total <span id="ballons">00</span></a>
+        <a class="counter">Caught <span id="caught">00</span></a>
+      </div>
+    </div>
+    <!--Timer-->
+    <div id="timer">
+      <time>00:00:00</time>
+    </div>
+  </div>
+  <!--Game-->
+  <div id="container"></div>
+</body>
+
+</html>
